@@ -15,4 +15,6 @@ export class AuthController {
     login(@Body() loginDto:LoginDto):Promise<{token:string}>{
         return this.authService.login(loginDto)
     }
+
+    
 }
